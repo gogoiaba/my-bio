@@ -5,7 +5,11 @@
 --cor-fundo-1: #717343;
 --cor-fundo-2: #262614;
 --cor-primaria: #F29A2E;
---cor-secundaria: #F1D9AC;
+--cor-secundaria: #f4ead8;
+
+    /* fontes */
+--fonte-primaria: "Amatic SC", sans-serif;
+--fonte-secundaria: "Montserrat", sans-serif;
 }
 
 * {
@@ -14,29 +18,57 @@
 }
 
 body {
-    height: 100dvh;    
+    height: 100%;    
     box-sizing: border-box;
     background: linear-gradient(to bottom, var(--cor-fundo-1), var(--cor-fundo-2));
-
 }
 
-h1 {
+.cabecalho {
+    padding: 2% 0 2% 0;
+    background-color: var(--cor-primaria);
+}
+
+.cabecalho__menu {
+    padding-left: 20%;
+    display: flex;
+    gap: 50px;
+}
+
+.cabecalho__menu__link {
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    font-size: 18px;
+    color: var(--cor-secundaria);
+}
+
+.titulo__principal {
     color: var(--cor-primaria);
+    padding-top: 4%;
     font-style: bold;
-    font-size: 70px;
+    font-size: 73px;
     text-align: center;
-    font-family: "Amatic SC", sans-serif;
+    font-family: var(--fonte-primaria);
     font-weight: 700;
     font-style: normal;
     text-shadow: 4px 4px 7px var(--cor-fundo-2);
+    transition: 10s;
 }
 
-.pagina {
+.titulo__principal:hover {
+    color: var(--cor-secundaria);
+}
+
+.pagina__principal {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 80px;
+    gap: 100px;
     margin: 5%;
+}
+
+.pagina__principal__esqueda {
+    display: flex;
+    flex-direction: column;
 }
 
 .foto__rosto {
@@ -45,20 +77,20 @@ h1 {
     box-shadow: 4px 4px 7px var(--cor-fundo-2);
 }
 
-.links__direita {
+.pagina__principal__direita {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-a {
+.botao__links__direita {
     text-decoration: none;
     background-color: var(--cor-primaria);
     width: 420px;
     text-align: center;
     border-radius: 20px;
     padding: 8%;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-secundaria);
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
@@ -69,7 +101,7 @@ a {
     position: relative;
 }
 
-a:hover{
+.botao__links__direita:hover {
    background-color: var(--cor-secundaria);
    color: var(--cor-primaria);
 }
