@@ -52,7 +52,7 @@ body {
 
 .titulo__principal {
     color: var(--cor-primaria);
-    padding-top: 4%;
+    padding: 2rem 0 1rem 0;
     font-style: bold;
     font-size: 56px;
     text-align: center;
@@ -82,7 +82,7 @@ body {
 
 .foto__rosto {
     width: 320px;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 4px 4px 7px var(--cor-fundo-2);
 }
 
@@ -97,7 +97,7 @@ body {
     background-color: var(--cor-primaria);
     width: 320px;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 6%;
     font-family: var(--fonte-secundaria);
     font-optical-sizing: auto;
@@ -124,3 +124,33 @@ body {
     font-size: 18px;
 }
 
+.principal__texto {
+    font-family: var(--fonte-secundaria);
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    color: var(--cor-secundaria);
+    padding: 1% 6%;
+    text-indent: 3rem;
+    text-align: justify;
+}
+
+.texto__about {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.imagens__about {
+    width: 320px;
+    border-radius: 10px;
+}
+
+.div__about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1% 8%;
+    padding: 1rem 0 3rem 0
+}
