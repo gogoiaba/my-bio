@@ -2,10 +2,10 @@
 
 :root {
     /* cores */
---cor-fundo-1: #717343;
---cor-fundo-2: #262614;
---cor-primaria: #F29A2E;
---cor-secundaria: #f4ead8;
+--cor-fundo-1: #4E4641;
+--cor-fundo-2: #2D2825;
+--cor-primaria: #FAA300;
+--cor-secundaria: #FFFDED;
 
     /* fontes */
 --fonte-primaria: "Amatic SC", sans-serif;
@@ -42,17 +42,16 @@ body {
     font-family: var(--fonte-secundaria);
     font-size: 1rem;
     font-weight: 400;
-    color: var(--cor-secundaria);
+    color: var(--cor-fundo-2);
     transition: all .35s;
 }
 
 .cabecalho__menu__link:hover {
-    color: var(--cor-fundo-2);
+    color: var(--cor-secundaria);
 }
 
 .pagina__principal {
     display: flex;
-    min-height: 100vh;
 }
 
 .pagina__principal__esquerda {
@@ -122,7 +121,7 @@ body {
 
 .rodape {
     padding: var(--pading-faixas);
-    color: var(--cor-secundaria);
+    color: var(--cor-fundo-2);
     background-color: var(--cor-primaria);
     text-align: center;
     font-family: var(--fonte-secundaria);
@@ -208,6 +207,7 @@ body {
     }
 
     .pagina__about {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
