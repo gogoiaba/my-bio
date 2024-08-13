@@ -21,7 +21,6 @@
 }
 
 body {
-    height: 100%;    
     box-sizing: border-box;
     background: linear-gradient(to bottom, var(--cor-fundo-1), var(--cor-fundo-2));
 }
